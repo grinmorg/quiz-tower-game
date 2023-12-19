@@ -1,19 +1,19 @@
-import { render, screen } from "@testing-library/react"
-import userEvent from '@testing-library/user-event'
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { Button } from "../button";
 
-describe('button', () => {
-    it('should work click on button', async () => {
-        const handleClick = jest.fn();
-        const buttonText = "Button";
+describe("button", () => {
+  it("should work click on button", async () => {
+    const handleClick = jest.fn();
+    const buttonText = "Button";
 
-        // render
-        render(<Button onClick={handleClick}>{buttonText}</Button>)
+    // render
+    render(<Button onClick={handleClick}>{buttonText}</Button>);
 
-        // click
-        await userEvent.click(screen.getByText(buttonText));
+    // click
+    await userEvent.click(screen.getByText(buttonText));
 
-        // mock function have been called
-        expect(handleClick).toHaveBeenCalled();
-    });
-})
+    // mock function have been called
+    expect(handleClick).toHaveBeenCalled();
+  });
+});
