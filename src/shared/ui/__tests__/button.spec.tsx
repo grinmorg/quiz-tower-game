@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Button } from "../button";
+import { Button } from "@nextui-org/button";
 
 describe("button", () => {
   it("should work click on button", async () => {

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/shared/ui/utils";
+import { Providers } from "@/shared/context/providers";
+import UINavbar from "@/shared/ui/layout/ui-navbar";
+import UIFooter from "@/shared/ui/layout/ui-footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,11 +25,17 @@ export default function RootLayout({
     <html lang="ru">
       <body
         className={cn(
-          "dark min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased dark",
           fontSans.variable,
         )}
       >
-        {children}
+        <Providers>
+          <div className="flex min-h-screen flex-col">
+            <UINavbar />
+            <div className="grow">{children}</div>
+            <UIFooter />
+          </div>
+        </Providers>
       </body>
     </html>
   );
