@@ -1,3 +1,4 @@
+import PlayButton from "@/entities/PlayButton";
 import {
   Navbar,
   NavbarBrand,
@@ -38,9 +39,7 @@ export default function UINavbar() {
           <Link className="text-gray-400" href="#">Войти</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Регистрация
-          </Button>
+          <PlayButton href="#" text="Регистрация" />
         </NavbarItem>
       </NavbarContent>
     </Navbar>

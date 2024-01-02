@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/shared/ui/utils";
-import { Providers } from "@/shared/context/providers";
+import { Providers } from "@/app/providers";
 import UINavbar from "@/shared/ui/layout/ui-navbar";
 import UIFooter from "@/shared/ui/layout/ui-footer";
 
