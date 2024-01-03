@@ -1,9 +1,10 @@
-import { IntroSection } from "@/sections";
+import { FeaturesSection, IntroSection } from "@/sections";
 
 export default function Home() {
   return (
     <main>
       <IntroSection />
+      <FeaturesSection />
     </main>
   );
 }
