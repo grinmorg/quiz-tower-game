@@ -24,7 +24,7 @@ export default function FeaturesSection() {
                     </div>
                 </BounceCard>
                 <BounceCard className="col-span-12 md:col-span-8">
-                    <CardTitle>Раздел "Есть идея"</CardTitle>
+                    <CardTitle>Раздел &quot;Есть идея&quot;</CardTitle>
                     <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-amber-400 to-orange-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
                         <img
                             className='rounded-xl'
