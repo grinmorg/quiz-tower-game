@@ -12,12 +12,9 @@ export default function UINavbar() {
   return (
     <Navbar>
       <NavbarBrand>
-        <p className="font-bold text-inherit">QUIZ TOWER</p>
+        <Link href="/"><p className="font-bold text-inherit text-white">QUIZ TOWER</p></Link>
       </NavbarBrand>
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
-        <NavbarItem isActive>
-          <Link href="#">Главная</Link>
-        </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
             Список комнат
@@ -26,6 +23,11 @@ export default function UINavbar() {
         <NavbarItem>
           <Link color="foreground" href="#">
             Маркет
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Топ игроков
           </Link>
         </NavbarItem>
         <NavbarItem>
