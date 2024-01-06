@@ -1,10 +1,7 @@
-import { FeaturesSection, IntroSection } from "@/sections";
+import HomePage from '@/pages/home'
 
-export default function Home() {
-  return (
-    <main>
-      <IntroSection />
-      <FeaturesSection />
-    </main>
-  );
+export default function Page() {
+    return (
+        <HomePage />
+    )
 }

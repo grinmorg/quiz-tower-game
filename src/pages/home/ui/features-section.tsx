@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import PlayButton from '@/entities/PlayButton';
 
-export default function FeaturesSection() {
+export function FeaturesSection() {
     return (
         <section className="mx-auto max-w-7xl px-4 py-12 text-slate-600">
             <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-8">

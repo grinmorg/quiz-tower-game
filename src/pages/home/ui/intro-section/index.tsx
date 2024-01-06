@@ -4,7 +4,7 @@ import IntroTitle from './intro-title'
 import Link from 'next/link'
 import PlayButton from '@/entities/PlayButton'
 
-export default function IntroSection() {
+export function IntroSection() {
     return (
         <div className="container mx-auto">
             <div className="relative z-10 mx-auto max-w-7xl px-4 pt-10 md:px-12">
