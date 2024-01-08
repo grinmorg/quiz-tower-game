@@ -11,7 +11,9 @@ export default function UINavbar() {
   return (
     <Navbar>
       <NavbarBrand>
-        <Link href="/"><p className="font-bold text-inherit text-white">QUIZ TOWER</p></Link>
+        <Link href="/">
+          <p className="font-bold text-inherit text-white">QUIZ TOWER</p>
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarItem>
@@ -37,7 +39,9 @@ export default function UINavbar() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link className="text-gray-400" href="#">Войти</Link>
+          <Link className="text-gray-400" href="#">
+            Войти
+          </Link>
         </NavbarItem>
         <NavbarItem>
           <PlayButton href="#" text="Регистрация" />

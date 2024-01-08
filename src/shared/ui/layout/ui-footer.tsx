@@ -14,7 +14,9 @@ export default function UIFooter() {
         <p>QUIZ TOWER</p>
         <p>
           Есть хороший вопрос?<br></br> Будем рады видеть его в разделе{" "}
-          <Link href="#" className=" font-bold">есть идея</Link>
+          <Link href="#" className=" font-bold">
+            есть идея
+          </Link>
         </p>
       </div>
     </div>
